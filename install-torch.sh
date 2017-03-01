@@ -8,7 +8,7 @@ cd ~/torch; bash install-deps;
 
 source ~/.bashrc
 
-sudo qpt install luarocks
+sudo apt install luarocks
 
 # install needed packages
 luarocks install https://raw.githubusercontent.com/eladhoffer/eladtools/master/eladtools-scm-1.rockspec
