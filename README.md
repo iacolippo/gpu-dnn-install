@@ -1,7 +1,7 @@
 # gpu-dnn-install
 Author: Iacopo Poli
 
-Description: Scripts and instructions to install CUDA, cuDNN and the most common deep learning frameworks.
+Description: Scripts and instructions to install CUDA, cuDNN and two of the most common deep learning frameworks ([Theano](http://deeplearning.net/software/theano/) and [Torch](http://torch.ch)).
 
 ## PREREQUISITES:
 
@@ -19,11 +19,24 @@ cudnn-8.0-linux-x64-v5.1.tar
 
 ## INSTALLATION
 
+NOTE: You have to set the permission to execute the installation script files. You can do that with 
+
+```bash 
+chmod a+x <filename>
+```
+
+You also may need to be admin or root user. If something doesn't work, try to repeat that step using ```sudo```.
+
 0 - Run this and check that it prints something, otherwise there is no NVIDIA hardware available.
 
 ```bash
 lspci | grep -i nvidia
 ```
+
+Sample output:
+
+![alt text](Img/NVIDIA-hardware.png "Sample output lspci")
+
    
 1 - Run 
 
@@ -63,16 +76,29 @@ sudo reboot
 ./install-theano.sh
 ```
 
+Output:
+
+![alt text](Img/using-gpu.png "Sample output gpu usage")
+
 7 - Run the following command and check that cuDNN is now available in the output of python test file.
         
 ```bash
 ./installing-cudnn.sh
 ```
+
+Output:
+
+![alt text](Img/using-cudnn.png "Sample output using cudnn and gpu")
+
         
-8 - Install Torch and some of its libraries with 
+8 - Install Torch
 
 ```bash
 ./install-torch.sh
 ```
 
-If you don't need Theano or Torch you can skip respectively step 6 and 8. Step 6 however is a nice check that everything works fine.
+For this, you may need to run as root user.
+
+If you don't need Torch you can skip step 8.
+
+For any question you can contact me on Twitter [@iacopo_poli](https://twitter.com/iacopo_poli).
