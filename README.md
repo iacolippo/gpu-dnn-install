@@ -25,8 +25,6 @@ NOTE: You have to set the permission to execute the installation script files. Y
 chmod a+x <filename>
 ```
 
-You also may need to be admin or root user. If something doesn't work, try to repeat that step using ```sudo```.
-
 0 - Run this and check that it prints something, otherwise there is no NVIDIA hardware available.
 
 ```bash
@@ -97,7 +95,7 @@ Output:
 ./install-torch.sh
 ```
 
-For this, you may need to run as root user.
+For this step, you may need to execute as root user with ```sudo -s```.
 
 If you don't need Torch you can skip step 8.
 
