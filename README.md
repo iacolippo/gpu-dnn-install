@@ -95,7 +95,7 @@ Output:
 ./install-torch.sh
 ```
 
-For this step, you may need to execute as root user with ```sudo -s```.
+For this step, you may need to execute as root user with ```sudo -s``` the line ```bash install-deps```. If anything goes wrong, just uninstall Torch with ```rm -rf ~/torch``` and rerun the script adding ```sudo -s``` to that line.
 
 If you don't need Torch you can skip step 8.
 
