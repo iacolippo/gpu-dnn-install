@@ -10,7 +10,3 @@ sudo cp -P lib64/libcudnn* /usr/lib/x86_64-linux-gnu/
 
 # set permissions
 sudo chmod a+r /usr/lib/x86_64-linux-gnu/libcudnn*
-
-cd
-
-python gpu-test.py
