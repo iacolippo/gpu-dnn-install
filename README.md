@@ -84,7 +84,7 @@ Output:
 ./installing-cudnn.sh
 ```
 
-If you run ```python gpu-test.py``` you should see cuDNN is now available.
+If you installed Theano you can run ```python gpu-test.py``` and you should see cuDNN is now available.
 Output:
 
 ![alt text](Img/using-cudnn.png "Sample output using cudnn and gpu")
