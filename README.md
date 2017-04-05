@@ -78,12 +78,13 @@ Output:
 
 ![alt text](Img/using-gpu.png "Sample output gpu usage")
 
-7 - Run the following command and check that cuDNN is now available in the output of python test file.
+7 - Run the following command.
         
 ```bash
 ./installing-cudnn.sh
 ```
 
+If you installed Theano, you can run ```python gpu-test.py``` and you should see cuDNN is now available.
 Output:
 
 ![alt text](Img/using-cudnn.png "Sample output using cudnn and gpu")
