@@ -3,7 +3,8 @@
 cd ~
 
 git clone https://github.com/torch/distro.git ~/torch --recursive
-cd ~/torch; bash install-deps;
+cd ~/torch; 
+sudo -s bash install-deps;
 ./install.sh
 
 source ~/.bashrc
