@@ -17,5 +17,5 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 # set PATH so it includes user's private bin directories
-PATH="/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/cuda-8.0/bin"
-LD_LIBRARY_PATH="/usr/local/cuda-8.0/lib64"
+PATH="$PATH:/usr/local/cuda-8.0/bin"
+LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64"
