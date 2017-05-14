@@ -18,4 +18,5 @@ fi
 
 # set PATH so it includes user's private bin directories
 PATH="$PATH:/usr/local/cuda-8.0/bin"
-LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64"
+export PATH="$PATH:/usr/local/cuda-8.0/bin"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-8.0/lib64"
